@@ -342,19 +342,19 @@
     
     @media screen and (max-width:401px) {
         .footer {
-            margin-top: 100px;
+            margin-top: 150px;
         }
     }
     
     @media screen and (max-width:375px) {
         .footer {
-            margin-top: 150px;
+            margin-top: 180px;
         }
     }
     
     @media screen and (max-width:355px) {
         .footer {
-            margin-top: 155px;
+            margin-top: 175px;
         }
     }
     
