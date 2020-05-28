@@ -1,208 +1,121 @@
 <!DOCTYPE html>
 
 <head>
-    <!-- Codage, Le responsive et La description -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog de creation de site web adaptatif aux differents écrans">
-    <!-- Encodage et Le responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Blog de creation de site web adaptatif aux differents écrans et d'informations">
 
-    <!-- Titre -->
     <title>Mon blog personnel</title>
-    <!-- Titre -->
 
-    <!-- Liens externes -->
-    <link rel="stylesheet" href="Index.css">
-
-    <link rel="shortcut icon" href="Favicon1.jpg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/e13e7736bf.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Roboto|Sonsie+One|Srisakdi:400,700&display=swap" rel="stylesheet">
-    <!-- Feuille de style -->
-
+    <link rel="shortcut icon" href="Logo-2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web\css/all.css">
 </head>
 
 <body>
-    <span id="home"></span>
-    <img class="img1" src="Profil.png" width="150px" alt="Mon profil adoré">
-    <br>
-    <div class="conteneur">
+
+    <!-- Logo et navbar -->
+
+    <div class="logo">
+        <img src="Logo-2.svg" alt="Le logo de la page">
+        <h1>Nothorcing</h1>
+        <h6>Design by Florent</h6>
+        <!-- Navbar -->
 
         <div class="navbar">
-            <!-- Navbar icon -->
+            <label for="check" class="open">
+            <i class="fas fa-bars"></i>
+        </label>
             <input type="checkbox" id="check">
-            <label for="check" class="open-icon">&#9776;</label>
-            <!-- Navbar titre -->
-            <h1>Nothorcing</h1>
-            <!--Navbar  Menu items -->
-            <ul class="navigation">
-                <div class="top50">
-                    <li>
-                        <a href="#home" class="home">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#blog" class="Blog">Blog-page</a>
-                    </li>
-                    <li>
-                        <a href="#contacts" class="contacts">Contacts</a>
-                    </li>
-                    <!-- Nav icon -->
-                    <label for="check" class="close-icon"><i class="fas fa-times"></i></label>
-                </div>
+            <ul>
+                <li><a href="Index.html" class="active">Accueil</a></li>
+                <li>
+                    <a href="#blog">Blog-page</a>
+                </li>
+                <li>
+                    <a href="Infos/nouveaute.html">Nouveautes</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contact</a>
+                </li>
+                <label for="check" class="close">
+                <i class="fas fa-times"></i>
+                </label>
             </ul>
         </div>
-        <!-- Blog logo -->
-        <div class="logo">
-            <div class="bg"></div>
-            <img src="logoimage.png" class="Logo" alt="Le logo de la page">
-            <h1 class="t-2">Bienvenue sur mon blog personnel</h1>
-            <h3>Nothorcing design</h3>
-            <h2>Un blog pouvant vous aidez &agrave; avoir un site internet</h2>
-        </div>
-        <br>
-        <br>
-        <br>
-        <span id="blog"></span>
-        <!-- Le blog-page -->
-        <div class="blog">
-            <!-- Liste des mots a definir -->
-            <h4 class="h4">Ce blog dit:</h4>
-            <ul class="blog-list-items">
-                <li>Qu'est-ce qu'un <span class="blue">site internet ?</span></li>
-                <br>
-                <li>Quels sont ses <span class="blue"> avantages ?</span></li>
-                <br>
-                <li>Quel est le <span class="blue">role</span> de celui-ci ?</li>
-            </ul>
 
-            <!-- Les definitions -->
-        </div>
-        <div class="dfn">
-            <div class="site">
-                <dl>
-                    <dt><span class="dimunier">C'est quoi un site internet ?</span></dt>
-                    <dd>
-                        Un site internet est une fa&ccedil;on unique de communiquer avec le monde. Il peut &ecirc;tre un bureau, la repr&eacute;sentation d'une entreprise sur internet etc.<br> Ainsi, avoir une plate-forme de partage de votre passion pour
-                       la musique ou les animaux, faire conna&icirc;tre votre entreprise aux clients potentiels, vendre des objets d'artisanat ou autre, cela peut se refl&egrave;ter &agrave; un site internet.
-                       De surcroit, Nous verons Quels sont les avantages !.
-                    </dd>
-                </dl>
-            </div>
-            <br>
-            <div class="avantage">
-                <dl>
-                    <dt><span class="dimunier"> Quels sont les avantages ?</span></dt>
-                    <dd>
-                        <ul>
-                            <h5> L'avantage d'avoir un site internet pour votre entreprise :</h5>
-                            <li> Augmenter sa visibilit&eacute; ...</li>
-                            <li> Consultable 24h/24 et 7j/7. ...</li>
-                            <li> Modifiable rapidement. ...</li>
-                            <li>Offrir un support &agrave; vos clients. ...</li>
-                            <li> Automatiser certaines t&acirc;ches. ...</li>
-                            <li> Ce n'est pas une d&eacute;pense, c'est un investissement.</li>
-                            <br>
-                        </ul>
-                    </dd>
-                </dl>
-            </div>
-            <br>
-            <div class="role">
-                <dl>
-                    <dt><span class="dimunier">C'est quoi alors son r&ocirc;le ?</span> </dt>
-                    <dd>
-                        Un site internet permet de gagner en <span>visibilit&eacute;</span> . Si vous &ecirc;tes entrepreneur, que vous vendez des produits ou des services sur un site Internet, est <span>b&eacute;n&eacute;fices</span> pour votre <span>visibilit&eacute;</span>                        en ligne.<br> Outre le gain de temps et d'argent, un site web permet de <span>communiquer, à tout moment, et en tout lieu</span> . Le site &eacute;tant accessible <span> 24h/24, de n'importe o&ugrave; dans le monde, la communication d'une entreprise
-                        prend une forme continue, ininterrompue.</span>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </dd>
-                </dl>
-            </div>
-            <br>
-        </div>
-        <!-- Motivation de creer -->
-        <div class="motiv">
-            <div class="font"></div>
-            <p>
-                <span class="m1">
-                    Si vous voulez cr&eacute;er-en un,
-                </span>
-                <br>
-                <br>
-                <span class="m2">
-                    Alors vous etes au bon endroit.
-                </span>
-                <br>
-                <br>
-                <span class="m3">
-                    Pour plus d'informations, veillez
-                </span>
-            </p>
-            <div class="fleche">
-                <i class="fas fa-location-arrow"></i>
-                <a href="#addresse"> me joindre</a>
-            </div>
-        </div>
-
-
-        <br>
-        <!-- Banniere -->
-        <div class="alert-info">
-            <div class="bg"></div>
-            <img class="Logo" src="accueil3.jpg" alt="Logo Du site">
-            <!-- Etes-vous pret -->
-            <div class="pret">
-                <p style="text-align: center" class="P11">
-                    <span style="font-size: 20px;" class="mtve">Vous changez d'avis et vous voulez en cr&eacute;er un  <span class="blue">site internet</span> ? Alors n'hesitez pas &agrave;</span><br>
-                    <a href="#phone" class="whit"> Me contacter</a>
-                </p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <!-- Footer -->
-        <div id="phone" class="footer">
-            <div id="contacts" class="Contacts">
-
-                <div class="fb">
-                    <div class="box">
-                        <a href="https://www.facebook.com/Élément-Nothorcing-102180384815551/?ref=aymt_homepage" target="blank"><i class="fab fa-facebook-f"></i></a></div>
-                    <a class="name" href="https://www.facebook.com/Élément-Nothorcing-102180384815551/?ref=aymt_homepage">El&eacute;ment Nothorcing</a>
-                </div>
-
-                <div id="wh">
-                    <div class="box"><a href="https://wa.me/+22544389146"><i class="fab fa-whatsapp"></i></a></div>
-                    <a class="name" href="https://wa.me/+22544389146">Nothorcing</a>
-                </div>
-
-                <div id="lin">
-                    <div class="box">
-                        <a href="https://www.linkedin.com/in/nothorcing-element-9038b11a7/" target="blank"> <i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <a class="name" href="https://www.linkedin.com/in/nothorcing-element-9038b11a7/" target="blank">Nothorcing Element</a>
-                </div>
-
-                <div id="ph">
-
-                    <div class="box"> <a href="tel:+22544389146"><i class="fas fa-phone-alt"></i></a></div>
-                    <a class="name" href="tel:+22544389146 ">Florent</a>
-                </div>
-                <div id="ml">
-                    <div class="box"> <a href="mailto:Nothorcingelement@gmail.com"><i class="fas fa-envelope"></i></a></div>
-                    <a class="name" href="mailto:Nothorcingelement@gmail.com">Nothorcing</a>
-                </div>
-            </div>
-            <div class="copy">
-                <h2><span>Design by</span> Nothorcing-©-2020</h2>
-            </div>
-        </div>
-        <!-- Le blog-page -->
+        <!-- /Navbar -->
     </div>
-</body>
 
-</html>
+    <!-- /Logo et navbar -->
+
+    <!-- Welcome -->
+
+    <div class="banner">
+        <h1>Bienvenue sur mon site</h1>
+        <p> Un site pouvant vous &ecirc;tre utile dans la mesure o&ugrave; il va vous aidez &agrave; cr&eacute;er votre <span class="color"> site internet.</span><br> <br>Est-ce que vous savez que avoir un <span class="color"> site internet</span> est tr&egrave;s
+            int&eacute;ressant et avantageux ?<br><br> Et oui je vous le confirme en vous disant que c'est tr&egrave;s int&eacute;ressant dans le but ou &ccedil;a nous rapport beaucoup.<br><br>Je vais en effet vous d&eacute;taillez ce qu'est-ce un
+            <span class="color"> site internet(1)</span>, quelques <span class="color">Avantages(2)</span> ainsi que le<span class="color"> role(3)</span>.
+            <br><br>En effet, si vous voulez-en cr&eacute;er sachez que vous pouvez me contacter (Voir contacts en bas) .</p>
+    </div>
+
+    <!-- /Welcome -->
+    <br>
+    <!-- Details d'un site internet -->
+
+    <div class="details" id="blog">
+        <div class="box box1">
+            <h1><span class="color">Site internet</span></h1>
+            <p> Un site internet est une fa&ccedil;on unique de communiquer avec le monde. Il peut &ecirc;tre un bureau, la repr&eacute;sentation d'une entreprise sur internet etc.<br> Ainsi, avoir une plate-forme de partage de votre passion pour la musique
+                ou les animaux, faire conna&icirc;tre votre entreprise aux clients potentiels, vendre des objets d'artisanat ou autre, cela peut se refl&egrave;ter &agrave; un site internet.</p>
+        </div>
+        <div class="box">
+            <h1 class="p2"><span class="color">Avantages</span></h1>
+            <p>
+                <ul>
+                    <h5> L'avantage d'avoir un site internet pour votre entreprise :</h5>
+                    <li> Augmenter sa visibilit&eacute; ...</li>
+                    <li> Site web consultable 24h/24 et 7j/7. ...</li>
+                    <li> Site web modifiable rapidement. ...</li>
+                    <li>Offrir un support &agrave; vos clients. ...</li>
+                    <li> Automatiser certaines t&acirc;ches. ...</li>
+                    <li> Ce n'est pas une d&eacute;pense, c'est un investissement.</li>
+                    <br>
+                </ul>
+            </p>
+        </div>
+        <div class="box">
+            <h1><span class="color">Role</span></h1>
+            <p> Un site internet permet de gagner en <span>visibilit&eacute;</span> . Si vous &ecirc;tes entrepreneur, que vous vendez des produits ou des services sur un site Internet, cela est <span class="red">b&eacute;n&eacute;fique</span> pour votre
+                <span>visibilit&eacute;</span> en ligne. Outre le gain de temps et d'argent, un site web permet de <span class="red">communiquer, à tout moment, et en tout lieu</span> . Le site &eacute;tant accessible <span class="red"> 24h/24</span>,
+                de n'importe o&ugrave; dans le monde, la communication d'une entreprise prend une forme continue, ininterrompue.</p>
+        </div>
+    </div>
+
+    <!-- /Details d'un site internet -->
+
+    <!-- Footer -->
+
+    <div class="footer" id="contacts">
+        <h1>Mes contacts</h1>
+        <div class="contact">
+
+            <ul>
+
+                <li><a href="https://www.facebook.com/Élément-Nothorcing-102180384815551/?ref=aymt_homepage" target="blank" class="fb"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://wa.me/+22544389146" class="wh"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="tel:+22544389146" class="tel"><i class="fas fa-phone-alt"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nothorcing-element-9038b11a7/" target="blank" class="lin"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:Nothorcingelement@gmail.com" class="gle"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            Copyright &copy; 2020 | Design by: <span class="blue"> Nothorcing</span>, All Right Reserved.
+        </div>
+    </div>
+
+    <!-- /Footer -->
 </body>
 
 </html>
