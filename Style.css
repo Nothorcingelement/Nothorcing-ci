@@ -312,7 +312,7 @@
     
     @media screen and (max-width:452px) {
         .details .box1 {
-            margin-top: 50px;
+            margin-top: 100px;
         }
     }
     
@@ -324,13 +324,13 @@
     
     @media screen and (max-width:344px) {
         .details .box1 {
-            margin-top: 200px;
+            margin-top: 250px;
         }
     }
     
     @media screen and (max-width:290px) {
         .details .box1 {
-            margin-top: 270px;
+            margin-top: 290px;
         }
     }
     
