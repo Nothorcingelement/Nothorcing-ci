@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.header{
+    position: relative;
+    position: fixed;
+    background: rgba(0,0 ,0 , 0.6);
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 12px black;
+    display: flex;
+    justify-content: space-between;
+    top:0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+}
+
+.header.sticky{
+    background: rgb(255, 255, 255);
+}
+
+.brand,
+.nav{
+    z-index: 1111;
+}
+
+.header .brand{
+    position: relative;
+    margin-left: 100px;
+}
+
+.header .brand h1{
+    // color:white;
+    font-weight:800;
+    line-height: 50px;
+    display:inline;
+
+}
+
+.nav {
+    position: relative;
+}
+.nav ul{
+    margin-right: 100px;
+    display: flex;
+}
+.nav ul li{
+    list-style-type: none;
+    margin: 0 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 50px;
+    transition: all .3s ease-out;
+}
+.nav ul li a:hover{
+    color: orangered;
+}
+
+
+.bergeur{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.bergeur .line{
+    width: 30px;
+    height: 3px;
+    margin: 3px;
+    background: rgb(0, 0, 0);
+    transition: .5s ease-in-out;
+}
+
+.bergeur .line:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateY(-10px);
+    transition: .5s ease-in-out;
+}
+
+.bergeur .line:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: translateY(10px);
+    transition: .5s ease-in-out;
+}
+
+.bergeur.open .line{
+    transform: translate(-50px);
+    background: transparent;
+    transition: .5s ease-in-out;
+}
+.bergeur.open .line:before{
+    transform: rotate(45deg) translate(35px, -35px);
+    transition: .5s ease-in-out;
+}
+.bergeur.open .line:after{
+    transform: rotate(-45deg) translate(35px, 35px);
+    transition: .5s ease-in-out;
+}
+
+.what{
+    position: fixed;
+    font-size: 35px;
+    top:50%;
+    right: 10px;
+    z-index: 111111;
+    background-color: #37fd1d;
+    padding: 20px;
+    border-radius: 60%;
+    color: white;
+    margin:0 100px 0 100px;
+}
+
+.section {
+    position: relative;
+    margin-top: 5px;
+    margin: 5px 100px 0 100px;
+}
+
+.section .banner{
+    position:relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.section .banner:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0 ,0 , 0.6);
+}
+
+.section .banner img{
+    width: 100%;
+}
+.section .banner p{
+    text-align: center;
+    text-transform:uppercase;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0 10px 0;
+    color:white;
+    letter-spacing:1px;
+}
+
+.about_us{
+    position: relative;
+    margin: 0 100px 0 100px;
+}
+.about_us img{
+    width: 100%;
+}
+.about_us:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:  rgba(0,0 ,0 , 0.6);
+    z-index: 11;
+}
+
+.about_us .info{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(38, 20, 199, 0.1);
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 111111;
+}
+
+.about_us .info p{
+    color:white;
+    text-transform: uppercase;
+    font-size: 30px;
+    z-index: 111111;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+ .footer .contact ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer .contact ul li {
+        list-style-type: none;
+        margin: 15px 5px;
+    }
+    
+    .footer .contact ul li .tel {
+       
+        padding: 5px;
+        border-radius: 50px;
+        color: white;
+        text-decoration:none;
+        
+    }
+
+    .footer .contact ul li .tel i{
+         background: #644cea;
+         padding:20px;
+         border-radius: 50px;
+         margin-left: 10px;
+    }
+
+    .footer .contact ul li:nth-child(1) a i:hover{
+         background: #f09000;
+         color:#00f00c;
+    }
+    .footer .contact ul li:nth-child(2) a i:hover{
+         background: #faf9f9;
+         color:orangered
+    }
+    .footer .contact ul li:nth-child(3) a i:hover{
+         background: #00f00c;
+    }
+
+    .footer .contact ul li span{
+        text-transform:uppercase;
+        text-align: center;
+    }
+
+@media screen and (max-width:983px){
+    .header{
+        flex-direction: column;
+        background: url(Imgs/logo.png) rgba(8, 207, 74, 0.692);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 100px;
+    }
+    .header.big{
+        background-size: 280px;
+    }
+
+    .header .brand{
+        margin: 0;
+        padding-left: 100px;
+        border-bottom: 1px solid gray;
+    }
+
+    .header .nav ul{
+        display: none;
+        transition: .5s ease-in-out;
+    }
+
+    .header .nav ul.slide{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        background: rgba(251, 251, 251);
+        width: 100%;
+    }
+
+    .bergeur{
+        display: flex;
+        margin: 0;
+        align-self: center;
+    }
+        .section {
+        position: relative;
+        margin-top: 5px;
+        margin: 0;
+    }
+    .about_us{
+        position: relative;
+        margin: 0;
+    }
+        .about_us .info{
+        position: absolute;
+        top:70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
+    .about_us .info p{
+        font-size:20px;
+    }
+
+    .section .banner{
+        margin-top: 90px;
+    }
+    .what{
+        margin: 0;
+    }
+}
+@media screen and (max-width:397px){
+    .header .brand h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:527px){
+    .footer .contact ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
